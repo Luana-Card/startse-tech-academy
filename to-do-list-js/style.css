@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Fredoka One', cursive;
+    border-radius: 8px;
+}
+
+body {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    max-height: 90vh;
+    background-color: #f08080;
+    gap: 1em;
+    margin-top: 10vh;
+}
+
+#newTaskBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+#taskInput {
+    width: 80%;
+    height: 4vh;
+}
+
+#taskInput:hover {
+    border-bottom: 2px solid #e23e61;
+}
+
+#taskInput:focus {
+    border: 2px solid #e23e61;
+}
+
+#addTask {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e23e61;
+    border: 2px solid #e23e61;
+    padding: 3px;
+    height: 4vh;
+    width: 8%;
+}
+
+#addTask:hover {
+    background-color: #e23e61;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.checkedTask {
+    text-decoration: line-through;
+    color: #008000;
+}
+
+#removeTask:hover {
+    color: #ff0000;
+}
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 250px;
+    padding: 5px 20px;
+    background-color: #ffffff;
+    max-height: 400px;
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
